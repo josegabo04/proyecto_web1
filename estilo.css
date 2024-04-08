@@ -1,9 +1,32 @@
-.parrafo{
-    color: blue;
-    margin-left: 15%;
+body{
+    background-color: rgb(58, 15, 15);
 }
 
-#lista{
-    color: rgba(0, 0, 255, 0.411);
-    margin-left: 25%;
+.menu{
+    background-color: brown;
+    margin-top: 5%;
+    width: 20%;
+    color: aliceblue;
+    float: left;
 }
+.opcion:hover{
+    color: blue;
+}
+
+.container{
+    width: 80%;
+    float: right;
+    margin-top: 10%;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.parrafo{
+    background-color: rgb(10, 10, 121);
+    margin-right: 15%;
+}
+.parrafo2{
+    background-color: rgb(203, 6, 6);
+    margin-right: 15%;
+}
+
