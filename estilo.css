@@ -6,7 +6,7 @@ body{
     background-color: brown;
     margin-top: 5%;
     width: 20%;
-    color: aliceblue;
+    color: rgb(8, 70, 124);
     float: left;
 }
 .opcion:hover{
