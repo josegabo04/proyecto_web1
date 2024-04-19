@@ -1,45 +1,93 @@
 body{
-    background-color: rgb(19, 113, 88);
-}
-
-header{
-    background-color: rgb(74, 74, 213);
-    text-align: center;
-    tex;
-}
-
-.menu{
-    background-color: rgb(79, 100, 221);
     
+    background-image: url('imagenes/fondo.jpeg');
+    background-repeat:no-repeat ;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family:sans-serif;
+
+}
+
+
+
+.menu a{
+    text-decoration: none;
     /*
+    background-color: rgb(79, 100, 221);
+    min-height: 800px;
     width: 20%;
     color: rgb(145, 179, 208);
     float: left;
     */
 }
 .opcion:hover{
-    color: blue;
+    color: rgb(193, 90, 200);
 }
 
 .opcion{
     color: rgb(255, 255, 255);
 }
 
-.parrafo{
-    background-color: rgb(10, 10, 121);
-
-    /*margin-right: 15%;*/
-}
-.parrafo2{
-    background-color: rgb(203, 6, 6);
-    /*margin-right: 15%;*/
-}
-
 
 .color1{
-    background-color: rgb(74, 74, 213);
+    background-color: rgb(147, 14, 195);
 }
 
-.imagen{
-    margin-top: 5%;
+.color2{
+    background-color: rgb(147, 14, 195);
+    text-align: center;
+}
+
+.color3{
+    background-color: rgb(0, 154, 21);
+    text-align: left;
+}
+
+.texto2{
+    text-align: left;
+}
+
+.icon-cart{
+    width: 40px;
+    height:40px;
+}
+
+.circulo{
+    border-radius: 50%;
+}
+
+.cuadro{
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.price{
+    font-weight: 800;
+}
+
+#contador{
+    background-color: blueviolet;
+    border-radius: 100%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    aspect-ratio: 1;
+    text-align: center;
+    font-family: Arial;
+    font-weight: 600;
+    position: absolute;
+}
+
+.carrito{
+    position: relative;
+}
+
+
+a{
+    color:rgb(255, 255, 255)
+}
+
+a:hover{
+    color: rgb(0, 154, 21);
 }
