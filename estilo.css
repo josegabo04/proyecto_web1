@@ -48,9 +48,13 @@ body{
     text-align: left;
 }
 
-.icon-cart{
+.carrito{
+    /*
     width: 40px;
     height:40px;
+    */
+    text-decoration: none;
+    position: relative;
 }
 
 .circulo{
@@ -79,9 +83,7 @@ body{
     position: absolute;
 }
 
-.carrito{
-    position: relative;
-}
+
 
 
 a{
@@ -90,4 +92,42 @@ a{
 
 a:hover{
     color: rgb(0, 154, 21);
+}
+
+#tProductos{
+    display: flex;
+    flex-wrap: wrap;
+   
+    align-content: center;
+}
+
+.tarjetaProducto{
+    max-width: 80%;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(166, 109, 219);
+}
+
+.tarjetaProducto img{
+    max-width: 100%;
+}
+
+#modalCarrito img{
+    max-width: 25%;
+    aspect-ratio: 1;
+
+}
+
+.mcart{
+    display: flex; 
+    gap: 20px; 
+}
+
+.canCar{
+    
+}
+
+.cantidadProd{
+    margin: 5px;
 }

@@ -12,33 +12,24 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-        <a class="navbar-brand text-light ps-4" href="index.html"><img src="imagenes/SoloLogo.png" width="40" height="40"
-                class="d-inline-block align-top circulo" alt="">
+
+        <a class="navbar-brand text-light ps-4" href="index.html"><img src="imagenes/SoloLogo.png" width="40"
+                height="40" class="d-inline-block align-top circulo" alt="">
             Amasanderia Meraki
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto pe-4">
-                <a class="nav-item nav-link" href="index.html">Inicio
-                </a>
-                <a class="nav-item nav-link"
-                    href="productos.html">Nuestros productos</a>
-                <a class="nav-item nav-link active"
-                    href="pedido.html">Realizar pedido</a>
-                <a class="nav-item nav-link"
-                    href="contacto.html">Contacto</a>
+                <a class="nav-item nav-link" href="index.html">Inicio</a>
+                <a class="nav-item nav-link" href="productos.html">Nuestros productos</a>
+                <a class="nav-item nav-link active" href="pedido.html">Realizar pedido</a>
+                <a class="nav-item nav-link" href="contacto.html">Contacto</a>
                 <a class="nav-item nav-link" href="login.html">Iniciar sesion</a>
 
-                <div class="carrito">
-                    <a href="#"><img
-                            src="imagenes\iconos\carrito.png"
-                            alt="carrito" class="icon-cart"></a>
 
-                    <span id="contador">0</span>
-                </div>
 
 
                 <!--
@@ -61,17 +52,48 @@
             -->
             </div>
         </div>
+
+        <div>
+            <a class="carrito" href="#" data-bs-toggle="modal" data-bs-target="#modal1">
+                <h1>🛒</h1>
+            </a>
+            <span id="contador">0</span>
+        </div>
+        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Carrito de compras</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-dark">
+                            <div id="modalCarrito" class = "row"></div>
+                            <span id="sTotal"></span>
+
+                        </div>
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary" disabled>Pagar</button>
+                            <button type="button" id="btnVaciar" class="btn btn-danger">Vaciar carrito</button>
+                        </div>
+                    </div>
+                
+            </div>
     </nav>
 
     <div class="container mt-2">
-        <img src="imagenes/logo.jpg" width="100" height="100" class="mx-auto d-block circulo" alt="logo">
+        <img src="imagenes/logo.jpg" width="100" height="100" class="mx-auto d-block circulo mb-2" alt="logo">
     </div>
 
-    <div class="container text-white color1 mt-4 ps-4 pe-4 pt-4 pb-4 rounded">
+    <div id="tProductos" class="container text-white color1 ">
+        <!--
         <div class="row">
-            <div class="col-sm-12 col-md-3">
-                <div class="card border-success" style="width: 18rem;">
-                    <img src="imagenes/productos/brownie.jpg" class="card-img-top cuadro" alt="brownie">
+            
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card border-success mx-auto d-block" style="width: 18rem;">
+                    <img src="imagenes/productos/brownie.jpeg" class="card-img-top cuadro" alt="brownie">
                     <div class="card-body">
                         <h5 class="card-title">Brownie con nuez</h5>
                         <p class="card-text">2 porciones grandes</p>
@@ -81,9 +103,9 @@
                 </div>
             </div>
 
-            <div class="col-sm-12 col-md-3">
-                <div class="card border-success" style="width: 18rem;">
-                    <img src="imagenes/productos/pie-limon.png" class="card-img-top cuadro" alt="pie-limon">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card border-success mx-auto d-block" style="width: 18rem;">
+                    <img src="imagenes/productos/pie-limon.jpeg" class="card-img-top cuadro" alt="pie-limon">
                     <div class="card-body">
                         <h5 class="card-title">Pie de limón</h5>
                         <p class="card-text">Familiar</p>
@@ -93,9 +115,9 @@
                 </div>
             </div>
 
-            <div class="col-sm-12 col-md-3">
-                <div class="card border-success" style="width: 18rem;">
-                    <img src="imagenes/productos/kuchennuez.jpg" class="card-img-top cuadro" alt="kuchennuez">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card border-success mx-auto d-block" style="width: 18rem;">
+                    <img src="imagenes/productos/kuchennuez.jpeg" class="card-img-top cuadro" alt="kuchennuez">
                     <div class="card-body">
                         <h5 class="card-title">kuchen de nuez</h5>
                         <p class="card-text">Familiar</p>
@@ -105,9 +127,9 @@
                 </div>
             </div>
 
-            <div class="col-sm-12 col-md-3">
-                <div class="card border-success" style="width: 18rem;">
-                    <img src="imagenes/productos/tortillacebolla.jpg" class="card-img-top cuadro" alt="tortillacebolla">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card border-success mx-auto d-block" style="width: 18rem;">
+                    <img src="imagenes/productos/tortillacebolla.jpeg" class="card-img-top cuadro" alt="tortillacebolla">
                     <div class="card-body">
                         <h5 class="card-title">Tortilla de cebolla</h5>
                         <p class="card-text">1 unidad Grande</p>
@@ -116,17 +138,31 @@
                     </div>
                 </div>
             </div>
-
-
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card border-success mx-auto d-block" style="width: 18rem;">
+                    <img src="imagenes/productos/tortillacebolla.jpeg" class="card-img-top cuadro" alt="tortillacebolla">
+                    <div class="card-body">
+                        <h5 class="card-title">Tortilla de cebolla</h5>
+                        <p class="card-text">1 unidad Grande</p>
+                        <p class="price">$2500</p>
+                        <a href="#" class="btn btn-success">Añadir al carrito</a>
+                    </div>
+            </div>
         </div>
-
+        </div>
+-->
     </div>
+   
+        <div id="caca" class="container"></div>
+    
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
-    <script src="cart.js"></script>
+    <script src="carrito.js"></script>
+    <script src="pedido.js"></script>
 </body>
 
 </html>
